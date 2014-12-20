@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SobiaLab - مختبر السوبيا</title>
+		<meta name="description" content="">
+		<meta name="author" content="Mohammed Suhail Fadin" >
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" media="screen">
+
+		<!--[if IE 7]>
+			<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="sidebar">
+				<a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<!-- <div id="logo"> <a href="/"><img src="img/logo.svg" alt="logo" /></a> </div> -->
+				<nav id="nav" class="navigation" role="navigation">
+					<ul class="unstyled">
+						<li class="active" data-section="1"><i class="icon-home"></i> <span>Home</span></li>
+						<li data-section="2" class=""><i class="icon-user"></i> <span>About</span></li>
+						<li data-section="3" class=""><i class="icon-laptop"></i> <span>Projects</span></li>
+						<li data-section="5" class="last"><i class="icon-envelope"></i> <span>Contact</span></li>
+					</ul>
+				</nav><!-- /nav -->
+			</div><!-- /sidebar -->
+
+			<div id="container">
+
+				<section class="section" id="section1" data-section="1">
+					<div class="container-fluid">
+						<div class="row-fluid">
+
+							<div class="alt-image img-circle thumb">
+								<img src="img/thumb.jpg" alt="Your Name" class="img-circle">
+							</div>
+							<div class="span6 intro">
+								<hgroup>
+									<h1 style="color:black;">Hello!</h1>
+									<h3 style="color:black;">My awesome dad took this shot! Cool right?</h3>
+								</hgroup>
+								<button class="btn-inverse" data-section="2">
+									Learn <span>More</span>
+									<i class="icon-circle-arrow-down"></i>
+								</button>
+							</div><!-- /span6 -->
+
+						</div><!-- /row-fluid -->
+					</div><!-- /container-fluid -->
+				</section><!-- /section -->
+
+				<section class="section" id="section2" data-section="2">
+					<div class="container-fluid">
+						<div class="row-fluid title">
+							<div class="span3">
+								<h2>About</h2>
+							</div><!-- /span3 -->
+							<div class="span9 hidden-phone">
+								<hr>
+							</div><!-- /span9 -->
+						</div><!-- /row-fluid -->
+
+						<div class="row-fluid desc">
+							<div class="span8">
+								<p>I'm a Software Engineering Student and a okay-ish Web Developer studying in King Fahd University of Petroleum & Minerals. I'm passionate about Programming and Software Development. I'm not good, but I work hard!</p>
+								<p>"Joel Spolsky implied that good programmers love programming so much that they'd do it for no pay at all." I guess I'm one of these guys, except the good part :).</p>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+
+						<div class="row-fluid desc">
+							<div class="span8">
+								<div id="sobialogo" class="span12">
+									<img src="../images/index.png"/>
+								</div>
+								<blockquote> Years ago, I had to come up with some brand name when I wanted to publish my first iOS app. Five minutes of brainstorming, and while drinking our "Makkawyyah" traditional drink, I thought why not calling it Sobia! (سوبيا)! ever since it has been SobiaLab , and I'm proud of this achievement ;)</blockquote>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+
+						<div class="row-fluid content hidden-tablet">
+							<div class="span12 expand">
+								<h4>Life Stats</h4>
+								<div class="row-fluid">
+
+									<div class="span4">
+									<!-- CHART N 2 -->
+										<script>
+										jQuery(document).ready(function( $ ) {
+											// Triggering only when it is inside viewport
+											jQuery('.knob-65').waypoint(function(){
+												// Triggering now
+										        jQuery('.knob-65').knob();
+										        // Animating the value
+										        if(jQuery('.knob-65').val() == 0) {
+											    	jQuery({value: 0}).animate({value: jQuery('.knob-65').attr("rel")}, {
+											        	duration: 5000,
+											        	easing:'swing',
+											        	step: function()
+												        	{
+													            jQuery('.knob-65').val(Math.ceil(this.value)).trigger('change');
+													        }
+												    	})
+											   	}
+									   	        }
+										        ,{
+										          triggerOnce: true,
+										          offset: function(){
+										            return $(window).height() - $(this).outerHeight();
+										          }
+										        }
+									        );
+										});
+										</script>
+
+										<div class="skill">
+											<input data-readonly="true"  data-fgcolor="#f68e51" data-inputColor="#333" data-width="245" data-height="122.5" class="knob-65" rel="100000" value="0" readonly="readonly" data-angleArc="180" data-angleOffset="-90" data-max="100" >
+											<h4 class="visible-phone"></h4>
+											<h6>Studying at <a href="http://kfupm.edu.sa" target="_blank">KFUPM ( Graduating in 13th of Jan 2015 )</a></h6>
+										</div>
+									<!-- END CHART N 2 -->
+									</div><!-- /span4 -->
+
+
+									<div class="span4">
+									<!-- CHART N 3 -->
+										<script>
+										jQuery(document).ready(function( $ ) {
+											// Triggering only when it is inside viewport
+											jQuery('.knob-85').waypoint(function(){
+												// Triggering now
+										        jQuery('.knob-85').knob();
+										        // Animating the value
+										        if(jQuery('.knob-85').val() == 0) {
+											    	jQuery({value: 0}).animate({value: jQuery('.knob-85').attr("rel")}, {
+											        	duration: 5000,
+											        	easing:'swing',
+											        	step: function()
+												        	{
+													            jQuery('.knob-85').val(Math.ceil(this.value)).trigger('change');
+													        }
+												    	})
+											   	}
+									   	        }
+										        ,{
+										          triggerOnce: true,
+										          offset: function(){
+										            return $(window).height() - $(this).outerHeight();
+										          }
+										        }
+									        );
+										});
+										</script>
+
+										<div class="skill">
+											<input data-readonly="true"  data-fgcolor="#2c3e50" data-inputColor="#333" data-width="245" data-height="122.5" class="knob-85" rel="10000" value="0" readonly="readonly" data-angleArc="180" data-angleOffset="-90" data-max="50" >
+											<h4 class="visible-phone">100000</h4>
+											<h6>Part Timer at<a href="http://remal.com" target="_blank">IndieLabs</a></h6>
+										</div>
+										<div class="skill">
+											<input data-readonly="true"  data-fgcolor="#2c3e50" data-inputColor="#333" data-width="245" data-height="122.5" class="knob-85" rel="10000" value="0" readonly="readonly" data-angleArc="180" data-angleOffset="-90" data-max="50" >
+											<h4 class="visible-phone">100000</h4>
+											<h6><a href="http://github.com/MohammedFadin" target="_blank">Github</a></h6>
+										</div>
+									<!-- END CHART N 3 -->
+									</div><!-- /span4 -->
+
+								</div><!-- /row-fluid -->
+							</div><!-- /span12 -->
+						</div><!-- /row-fluid -->
+					</div><!-- /container -->
+				</section><!-- /section -->
+
+				<section class="section" id="section3" data-section="3">
+					<div class="container-fluid">
+						<div class="row-fluid title">
+							<div class="span4">
+								<h2>Projects</h2>
+							</div><!-- /span4 -->
+							<div class="span8 hidden-phone alt">
+								<hr>
+							</div><!-- /span8 -->
+						</div>
+						<div class="row-fluid desc">
+							<div class="span8">
+								<p>I love doing side-projects, though mine, are stupid and funny, but hey! you gotta keep your self busy and continue learning right?
+								I removed all projects links, and replaced them with my LinkedIn page
+								please have a look at my work on Github and LinkedIn</p>
+							</div><!-- /span8 -->
+						</div><!-- /row -->
+
+						<div class="row-fluid content slide">
+							<div class="span4">
+								<a href="https://www.linkedin.com/in/mohammedfadin" target="_blank"><img class="img-circle" src="./images/linkedin.png" alt="Linkedin Link"></a>
+								<h6 class="hidden-phone">- LinkedIn Profile</h6>
+							</div><!-- /span4 -->
+							<div class="span4">
+								<a href="https://www.github.com/mohammedfadin" target="_blank"><img class="img-circle" src="./images/github.png" alt="github Link"></a>
+								<h6 class="hidden-phone">- Github Profile</h6>
+							</div><!-- /span4 -->
+
+							<!-- /span4 -->
+							<!-- /span4 -->
+							<!-- /span4 -->
+
+						</div><!-- /row-fluid -->
+
+					</div><!-- /container -->
+				</section><!-- /section -->
+
+
+
+
+
+				<section class="section" id="section5" data-section="5">
+					<div class="container-fluid">
+						<div class="row-fluid title">
+							<div class="span4">
+								<h2>Contact</h2>
+							</div><!-- /span4 -->
+							<div class="span8 hidden-phone alt">
+								<hr>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+						<div class="row-fluid content">
+							<div class="span4">
+								<h4 class="intro">Drop me an Email!</h4>
+								<p>If you've a project in your crazy mind, contact me! I'd love to hear it.</p>
+								<div class="row-fluid alt">
+									<h5>Email:</h5>
+									<span><a href="mailto:imohammad@me.com?subject=Passed By Sobialab.com!">imohammad@me.com</a></span>
+								</div><!-- /row -->
+								<div class="row-fluid alt">
+									<h5>Phone:</h5>
+									<span>(+966)555 644150</span>
+								</div><!-- /row -->
+								<div class="row-fluid alt">
+									<h5>Twitter:</h5>
+									<span><a href="http://www.twitter.com/mohammedfadin" target="_blank">@mohammedfadin</a></span>
+								</div><!-- /row -->
+							</div><!-- /span4 -->
+
+							<div class="span8">
+
+								<div class="row-fluid">
+									<div class="span12">
+									</div><!-- /span12 -->
+								</div><!-- /row-fluid -->
+
+								<form method="POST" action="#">
+
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="control-group">
+												<label for="name" class="control-label">Name:</label>
+												<div class="controls">
+													<input class="span12" type="text" name="contact_name" id="name">
+												</div><!-- /controls -->
+											</div><!-- /control-group -->
+										</div><!-- /span6 -->
+										<div class="span6">
+											<div class="control-group">
+												<label for="email" class="control-label">Email:</label>
+												<div class="controls">
+													<input class="span12" type="email" name="contact_email" id="email">
+												</div><!-- /controls -->
+											</div><!-- /control-group -->
+										</div><!-- /span6 -->
+									</div><!-- /row-fluid -->
+
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="control-group">
+												<label for="phone" class="control-label">Phone Number:</label>
+												<div class="controls">
+													<input class="span12" type="tel" name="contact_phone" id="phone">
+												</div><!-- /controls -->
+											</div><!-- /control-group -->
+										</div><!-- /span6 -->
+											<div class="span6">
+												<div class="control-group">
+												<label for="website" class="control-label">Your Website:</label>
+												<div class="controls">
+													<input class="span12" type="url" name="contact_website" id="website">
+												</div><!-- /controls -->
+											</div><!-- /control-group -->
+										</div><!-- /span6 -->
+									</div><!-- /row-fluid -->
+
+									<div class="row-fluid">
+										<div class="span12">
+											<div class="control-group">
+												<label for="message" class="control-label">Your Message:</label>
+												<div class="controls">
+													<textarea class="span12" type="text" name="contact_message" id="message" rows="4"></textarea>
+												</div><!-- /controls -->
+											</div><!-- /control-group -->
+										</div><!-- /span12 -->
+									</div><!-- /row-fluid -->
+
+					                <input type="hidden" name="save" value="contact">
+									<button type="submit" class="btn-inverse pull-right">
+										Send <span>Message</span>
+										<i class="icon-circle-arrow-right"></i>
+									</button>
+							</form><!-- /form -->
+						</div><!-- /span8 -->
+
+						<div id="footer">
+							<div class="row-fluid">
+								<div class="span12">
+
+								</div><!-- /span12 -->
+							</div><!-- /row-fluid -->
+						</div><!-- /footer -->
+					</div><!-- /row-fluid -->
+				</div><!-- /container-fluid -->
+
+			</div><!-- /container -->
+		</div><!-- /wrapper -->
+
+		<!-- JAVASCRIPTS -->
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.knob.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
